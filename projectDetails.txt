@@ -1,0 +1,14 @@
+Project Summary -
+    -> owner will upload a file {one pager, story, script, narration, etc}. 
+    -> This file will get uploaded into IPFS {a decentralized storage}.   
+    -> IPFS will return a CID {Content IDentifier} where the files are stored in the IPFS
+    -> CID will be encrypt using AES encryption algorithm
+    -> Key is used to point the CID. Key is created using encrypted email, encrypted file name, timestamp {= time of upload of file into IPFS. Time Format is epoch unix time}
+    -> Encrypted email and encrypted file name is created using one-way encryption {keccak256 has been used}
+    -> To retrieve the information, owner needs to provide Email, file name and time of upload of file into IPFS.
+
+
+Project Deployment -
+    -> Binance Smart Chain Testnet - https://testnet.bscscan.com/address/0x69ee0C8df0506b6c7B5b39071ca2A3D0390f6687#code 
+    -> Polygon Mumbai Testnet - https://mumbai.polygonscan.com/address/0x3da16E6cfa45DdeC7db96967C2707a26dD9090bF#code
+    -> Polygon Mainnet - https://polygonscan.com/address/0xB352bBbe946f0b963F1e045Aa25d5606E13d21BF#code
